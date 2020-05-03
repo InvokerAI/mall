@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class MallDemoApplicationTests {
@@ -26,6 +28,8 @@ public class MallDemoApplicationTests {
 		product.setBrandName("小米");
 		logger.info(mapper.writeValueAsString(product));
 		logger.error(mapper.writeValueAsString(product));
+		ArrayList list = new ArrayList();
+		list.stream();
 	}
 
 }
